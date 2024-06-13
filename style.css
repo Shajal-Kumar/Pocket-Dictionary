@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(228, 155, 255);
+    font-family: Poppins, sans-serif;
+}
+
+.container{
+    /* display: flex;
+    justify-content: center ;
+    flex-flow: column; */
+    background-color: white;
+    width: 90vmin;
+    /* min-height:30vh; */
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+#searchBox{
+    margin-top: 2rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#wInp{
+    width: 70%;
+    padding: 5px;
+    border:none;
+    outline: none;
+    border-bottom: solid 4px rgb(228, 155, 255);
+    font-size: 16px;
+}
+
+#btn{
+    width:25%;
+    padding: 10px 0px;
+    border:none;
+    outline: none;
+    background-color: rgb(228, 155, 255);
+    color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    /* transition: font-size ease 0.5s; */
+}
+
+#btn:hover{
+    background-color: rgb(198, 83, 236);
+    font-size: 20px;
+}
+
+#btn:active{
+    background-color: rgb(228, 155, 255);
+}
+
+#result{
+    position: relative;
+}
+
+
+#result h3{
+    font-size: 30px;
+    color: rgb(133, 15, 141);
+    font-weight: 500;
+    transition: font-size 0.5s ease;
+}
+
+#result h3:hover{
+    font-size: 35px;
+}
+
+#result .wordDisp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#result button{
+    background-color: transparent;
+    border: none;
+    color: rgb(228, 155, 255);
+    outline:none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 2s ease;
+    transition: font-size 0.5s ease;
+}
+
+#result button:hover{
+    color: rgb(133, 15, 141);
+    font-size: 22px;
+}
+
+#result .details{
+    display: flex;
+    gap: 10px;
+    /* margin-top: -2.5rem; */
+    color: rgb(145, 133, 148);
+    margin: -2.5rem 0px 20px;
+    font-size: 14px;
+}
+
+#result .meaning{
+    color: rgb(109, 99, 112);
+}
+#result .example{
+    border-left: 5px solid rgb(228, 155, 255);
+    padding-left: 20px;
+    font-style: italic;
+    margin-top: 30px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(70, 64, 71);
+}
